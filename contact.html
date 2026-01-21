@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="auto">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Arul Srivastva — Portfolio</title>
+  <meta name="description" content="Arul Srivastva" />
+  <link rel="preload" href="background.css" as="style">
+  <link rel="stylesheet" href="background.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="portfolio.html" aria-label="Home">
+        <svg class="logo" width="36" height="72" viewBox="0 0 64 64" aria-hidden="true">
+           </svg>
+          <span id="aslogo" class="aslogo">
+          <rect></rect>
+          <text>AS</text>
+          
+          </span>
+
+        <span class="brand-text">Arul Srivastva</span>
+      </a>
+
+      <nav class="nav" aria-label="Primary">
+        <button id="nav-toggle" class="nav-toggle" aria-expanded="false" aria-controls="nav-list">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+        </button>
+        <ul id="nav-list" class="nav-list">
+          <li><a href="portfolio.html" data-nav="home">Home</a></li>
+          <li><a href="projects.html" data-nav="projects">Projects</a></li>
+          <li><a href="education.html" data-nav="education">Education</a></li>
+          <li><a href="experience.html" data-nav="experience">Experience</a></li>
+          <li><a class="active" href="contact.html" data-nav="contact">Contact</a></li>
+          <li class="divider" aria-hidden="true"></li>
+          <li><button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme">🌙</button></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main id="main" class="accent">
+    <header class="page-header">
+      <h1>Contact</h1>
+      <p>Have a project in mind? Let’s talk. ❗</p>
+    </header>
+
+    <form id="contact-form" class="container section al" novalidate>
+      <div class="field">
+        <label for="name">Name</label>
+        <input id="name" name="name" autocomplete="name" required />
+        <p class="error" id="err-name" role="alert"></p>
+      </div>
+
+      <div class="field">
+        <label for="email">Email</label>
+        <input id="email" name="email" type="email" autocomplete="email" required />
+        <p class="error" id="err-email" role="alert"></p>
+      </div>
+
+      <div class="field">
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="6" minlength="10" required></textarea>
+        <p class="error" id="err-message" role="alert"></p>
+      </div>
+
+      <div class="actions">
+        <button class="btn btn-primary" type="submit">Send</button>
+        <p id="form-status" class="status" aria-live="polite"></p>
+      </div>
+    </form>
+
+    <section class="social">
+      <h2 class="section-title">My Projects</h2>
+      <ul class="links" role="list">
+        <li><a href="https://github.com/ArulSrivastva-AVV" aria-label="GitHub profile">GitHub</a></li>
+        <li><a href="https://www.linkedin.com/in/arul-srivastva-226769376/" aria-label="LinkedIn profile">LinkedIn</a></li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> Arul Srivastva. All rights reserved.</p>
+      <a class="foot-link" href="contact.html">Get in touch</a>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js" defer></script>
+  <script src="assets/js/form.js" defer></script>
+</body>
+</html>

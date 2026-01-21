@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Kiosk Interface</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            margin: 0;
+            overflow: hidden; /* Prevents scrolling */
+            background: #f0f2f5;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        .hero-card {
+            background: white;
+            padding: 3rem;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+
+        button {
+            background: #007bff;
+            color: white;
+            border: none;
+            padding: 1.5rem 3rem;
+            font-size: 1.5rem;
+            border-radius: 50px;
+            cursor: pointer;
+            transition: transform 0.2s;
+        }
+
+        button:active { transform: scale(0.95); }
+
+        #timer-warning {
+            position: fixed;
+            bottom: 20px;
+            color: #888;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="hero-card" id="main-content">
+        <h1>Welcome to our Service</h1>
+        <p>Please tap the button below to begin.</p>
+        <button onclick="startSession()">START HERE</button>
+    </div>
+
+    <div id="timer-warning"></div>
+
+    <script>
+        let idleTime = 0;
+        const IDLE_LIMIT = 30; // Seconds before reset
+
+        // 1. Function to enter Fullscreen (Kiosk Mode)
+        function startSession() {
+            if (document.documentElement.requestFullscreen) {
+                document.documentElement.requestFullscreen();
+            }
+            alert("Session Started!");
+        }
+
+        // 2. Idle Timer Logic
+        // Resets the page if the user walks away
+        function resetTimer() {
+            idleTime = 0;
+            document.getElementById('timer-warning').innerText = "";
+        }
+
+        // Increment timer every second
+        setInterval(() => {
+            idleTime++;
+            if (idleTime > IDLE_LIMIT - 10) {
+                document.getElementById('timer-warning').innerText = `Resetting in ${IDLE_LIMIT - idleTime}s...`;
+            }
+            if (idleTime >= IDLE_LIMIT) {
+                location.reload(); // Hard reset to home screen
+            }
+        }, 1000);
+
+        // Listen for user interaction to reset idle clock
+        window.onload = resetTimer;
+        window.onmousemove = resetTimer;
+        window.onmousedown = resetTimer;
+        window.ontouchstart = resetTimer;
+        window.onclick = resetTimer;
+        window.onkeypress = resetTimer;
+    </script>
+
+    function handlePaymentSuccess() {
+    fetch('http://localhost:5000/print', {
+        method: 'POST',
+        headers: {'Content-Type': 'application/json'},
+        body: JSON.stringify({ content: "Thank you for your order!\nTotal: $25.00" })
+    });
+}
+</body>
+</html>

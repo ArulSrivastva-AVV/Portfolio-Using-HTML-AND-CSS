@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="auto">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Arul Srivastva — Portfolio</title>
+  <meta name="description" content="Arul Srivastva" />
+  <link rel="preload" href="background.css" as="style">
+  <link rel="stylesheet" href="background.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="portfolio.html" aria-label="Home">
+        <svg class="logo" width="36" height="72" viewBox="0 0 64 64" aria-hidden="true">
+           </svg>
+          <span id="aslogo" class="aslogo">
+          <rect></rect>
+          <text>AS</text>
+          
+          </span>
+
+        <span class="brand-text">Arul Srivastva</span>
+      </a>
+
+      <nav class="nav" aria-label="Primary">
+        <button id="nav-toggle" class="nav-toggle" aria-expanded="false" aria-controls="nav-list">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+        </button>
+        <ul id="nav-list" class="nav-list">
+          <li><a href="portfolio.html" data-nav="home">Home</a></li>
+          <li><a class="active" href="projects.html" data-nav="projects">Projects</a></li>
+          <li><a href="education.html" data-nav="education">Education</a></li>
+          <li><a href="experience.html" data-nav="experience">Experience</a></li>
+          <li><a href="contact.html" data-nav="contact">Contact</a></li>
+          <li class="divider" aria-hidden="true"></li>
+          <li><button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme">🌙</button></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" class="container">
+    <header class="page-header">
+      <h1>Projects</h1>
+      <p>Selected work demonstrating craft, scale, and polish.</p>
+    </header>
+  <section class="social">
+      <h2 class="section-title">Elsewhere</h2>
+      <ul class="links" role="list">
+       
+        <div data-iframe-width="150" data-iframe-height="270" data-share-badge-id="577b7a83-73c0-4ca5-bc1c-5d4f5b201b13" data-share-badge-host="https://www.credly.com"></div></script>
+       
+      </ul>
+    </section>
+  
+
+    <section id="portfolio-template" class="project reveal">
+      <h2>Portfolio Template</h2>
+      <p>This template: fast, accessible, animated, and dark-mode friendly.</p>
+      <div class="project-media skeletal"></div>
+    </section>
+  </main>
+
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> Arul Srivastva. All rights reserved.</p>
+      <a class="foot-link" href="contact.html">Get in touch</a>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js" defer></script>
+</body>
+</html>

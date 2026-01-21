@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="auto">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Arul Srivastva — Portfolio</title>
+  <meta name="description" content="Arul Srivastva" />
+  <link rel="preload" href="background.css" as="style">
+  <link rel="stylesheet" href="background.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="portfolio.html" aria-label="Home">
+        <svg class="logo" width="36" height="72" viewBox="0 0 64 64" aria-hidden="true">
+           </svg>
+          <span id="aslogo" class="aslogo">
+          <rect></rect>
+          <text>AS</text>
+          
+          </span>
+
+        <span class="brand-text">Arul Srivastva</span>
+      </a>
+
+      <nav class="nav" aria-label="Primary">
+        <button id="nav-toggle" class="nav-toggle" aria-expanded="false" aria-controls="nav-list">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+        </button>
+        <ul id="nav-list" class="nav-list">
+          <li><a href="portfolio.html" data-nav="home">Home</a></li>
+          <li><a href="projects.html" data-nav="projects">Projects</a></li>
+          <li><a href="education.html" data-nav="education">Education</a></li>
+          <li><a href="experience.html" data-nav="experience">Experience</a></li>
+          <li><a href="contact.html" data-nav="contact">Contact</a></li>
+          <li class="divider" aria-hidden="true"></li>
+          <li><button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme">🌙</button></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero container">
+      <div class="hero-copy">
+        <h1><span class="accent">Hi, I’m Arul Srivastva — </span><span class="accent">Learning to be a Full Stack Devloper
+        </span> crafting delightful web apps.</h1>
+        <p><span class="accent">I try my best to build fast, accessible, and beautiful interfaces with HTML, CSS, and JavaScript.</span></p>
+        <div class="hero-ctas">
+          <a class="btn " href="projects.html">View Projects</a>
+          <a class="btn " href="experience.html">My Experience</a>
+        </div>
+
+        </ul>
+      </div><br>
+
+    <section class="container section">
+      <h2 class="section-title">Featured Projects</h2>
+      <div class="grid cards">
+        <article class="card reveal">
+          <h3>UI Component Library</h3>
+          <p>Accessible components with zero dependencies and theming.</p>
+          <a class="card-link" href="projects.html#ui-library" aria-label="Read more about my Library">Read more →</a>
+        </article>
+        <article class="card reveal">
+          <h3>Realtime Dashboard</h3>
+          <p>Analytics with out of world performance.</p>
+          <a class="card-link" href="projects.html#realtime-dashboard">Read more →</a>
+        </article>
+        <article class="card reveal">
+          <h3><span class= card>Projects</span></h3>
+          <p>Real time Prototypes and Projects made by me</p>
+          <a class="card-link" href="projects.html#portfolio-template">Read more →</a>
+        </article>
+      </div>
+    </section><br>
+
+    <section class="container section alt">
+      <h2 class="section-title">Tech I Use</h2>
+      <ul class="tags" role="list">
+        <li>HTML</li><li>CSS</li><li>JavaScript</li><li>Python</li><li>C++</li><li>C</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> Arul Srivastva. All rights reserved.</p>
+      <a class="foot-link" href="contact.html">Get in touch</a>
+    </div>
+  </footer>
+
+  const toggleBtn = document.getElementById('theme-toggle');
+const body = document.body;
+
+toggleBtn.addEventListener('click', () => {
+  body.classList.toggle('dark-mode');
+  
+  // Optional: Save preference to local storage
+  if (body.classList.contains('dark-mode')) {
+    localStorage.setItem('theme', 'dark');
+  } else {
+    localStorage.setItem('theme', 'light');
+  }
+});
+
+// Check for saved user preference on page load
+if (localStorage.getItem('theme') === 'dark') {
+  body.classList.add('dark-mode');
+}
+
+  <script src="assets/js/main.js" defer></script>
+</body>
+</html>
