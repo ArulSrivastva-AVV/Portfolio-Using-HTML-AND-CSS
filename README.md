@@ -1,2 +1,5 @@
-# 2nd-version-of-portfolio
+# My Portfolio using HTML and  CSS
 
+
+# THIS IS MY FIRST TIME EXPLORING WITH HTML AND CSS...
+# HOPE YOU LIKE IT:)
