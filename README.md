@@ -1,18 +1,32 @@
-# My Personal Portfolio
 
+# Hi there, I'm Arul Srivastva! 👋
+
+I am a **First-Year B.Tech student at Amrita Vishwa Vidyapeetham**, passionate about solving problems through code and building clean, functional user interfaces.
 Welcome to my first web development project! This is a personal portfolio website built using pure **HTML** and **CSS**. This project marks the beginning of my journey into frontend development and serves as a digital resume to showcase my education, projects, and experiences.
 
 ## 🚀 Project Overview
 
 This portfolio is a multi-page website designed to introduce who I am and what I've worked on. Since this is my first time exploring HTML and CSS, the focus was on understanding the core structure of web pages and basic styling principles.
 
-### 📄 Pages Included:
-- **Home (`index.html`)**: The landing page and introduction.
-- **Education (`education.html`)**: Details about my academic background.
-- **Experience (`experience.html`)**: A summary of my professional or extracurricular work.
-- **Projects (`projects.html`)**: A showcase of the technical projects I've built.
-- **Portfolio (`portfolio.html`)**: A curated gallery or secondary project overview.
-- **Contact (`contact.html`)**: A section with my contact details for networking.
+
+### 🚀 About Me
+- 🎓 Currently pursuing my B.Tech degree.
+- 💻 Deep diving into **C Programming** (Data Structures, Algorithms, and Pointers).
+- 🎨 Exploring Frontend Development with **HTML & CSS**.
+- 🏆 Recent participant in a Frontend Hackathon.
+
+### 🛠️ Tech Stack
+- **Languages:** C (Core), HTML5, CSS3
+- **Tools:** Git, GitHub, VS Code
+
+### 📈 Current Focus
+- Mastering **Dynamic Arrays** and **File Handling** in C.
+- Improving my CSS layout skills (Flexbox & Grid).
+- Participating in Hackathons to build projects under pressure.
+
+### 📫 How to reach me
+- **GitHub:** [ArulSrivastva-AVV](https://github.com/ArulSrivastva-AVV)
+- *Feel free to explore my repositories and see my progress!*
 
 ## 🛠️ Built With
 
@@ -30,3 +44,8 @@ This portfolio is a multi-page website designed to introduce who I am and what I
 1. **Clone the repository:**
    ```bash
    git clone [https://github.com/ArulSrivastva-AVV/Portfolio-Using-HTML-AND-CSS.git](https://github.com/ArulSrivastva-AVV/Portfolio-Using-HTML-AND-CSS.git)
+
+---
+"Consistency is the key to mastering code."
+
+
