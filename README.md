@@ -25,7 +25,8 @@ This portfolio is a multi-page website designed to introduce who I am and what I
 - Participating in Hackathons to build projects under pressure.
 
 ### 📫 How to reach me
-- **GitHub:** [ArulSrivastva-AVV](https://github.com/ArulSrivastva-AVV)
+- **GitHub:** [ArulSrivastva](https://github.com/ArulSrivastva-AVV)
+- **Linkdin** [Arul Srivastva](https://linkdin.com/Arulsrivastva)
 - *Feel free to explore my repositories and see my progress!*
 
 ## 🛠️ Built With
