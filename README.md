@@ -26,7 +26,7 @@ This portfolio is a multi-page website designed to introduce who I am and what I
 
 ### 📫 How to reach me
 - **GitHub:** [ArulSrivastva](https://github.com/ArulSrivastva-AVV)
-- **Linkdin** [Arul Srivastva](https://linkedin.com/in/Arulsrivastva)
+- **Linkedin* [Arul Srivastva](https://linkedin.com/in/Arulsrivastva)
 - *Feel free to explore my repositories and see my progress!*
 
 ## 🛠️ Built With
